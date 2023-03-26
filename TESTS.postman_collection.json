@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "1b4390d3-b0c1-4742-9711-143686baee33",
+		"name": "TESTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26560513"
+	},
+	"item": [
+		{
+			"name": "http://localhost:6868/chicken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Mireille Matthieu",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "24 Dec 1552 00:00:00 GMT",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:6868/chicken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6868",
+					"path": [
+						"chicken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:6868/chicken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6868/chicken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6868",
+					"path": [
+						"chicken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:6868/chicken/64203d5fb3fd0154eed1d299",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Xavier Niel",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "45",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "birthday",
+							"value": "01 Nov 1970 00:00:00 GMT",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:6868/chicken/64203d5fb3fd0154eed1d299",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6868",
+					"path": [
+						"chicken",
+						"64203d5fb3fd0154eed1d299"
+					]
+				},
+				"description": "Copy a chicken ID"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:6868/chicken/6420404f4c74d055227d0276",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6868/chicken/6420404f4c74d055227d0276",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6868",
+					"path": [
+						"chicken",
+						"6420404f4c74d055227d0276"
+					]
+				},
+				"description": "Copy a chicken ID you want to delete"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:6868/chicken/run/6420404f4c74d055227d0276",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:6868/chicken/run/6420404f4c74d055227d0276",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6868",
+					"path": [
+						"chicken",
+						"run",
+						"6420404f4c74d055227d0276"
+					]
+				},
+				"description": "Copy a chicken ID"
+			},
+			"response": []
+		}
+	]
+}
