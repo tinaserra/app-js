@@ -8,9 +8,11 @@ module.exports.getChicken = async (req, res) => {
 module.exports.setChicken = async (req, res) => {
     if (!req.body.name) {
         res.status(400).json({name: "A name is needed"});
+        return ;
     }
     if (!req.body.weight) {
         res.status(400).json({weight: "A weight is needed"});
+        return ;
     }
 
     // await car on a besoin d'envoyer des choses a la db
@@ -23,7 +25,6 @@ module.exports.setChicken = async (req, res) => {
 };
 
 module.exports.editChicken = async (req, res) => {
-    // on recuperre dans le parametre l'id du message
     const chicken = await ChickenModel.findById(req.params.id);
 
     if (!chicken) {
@@ -58,12 +59,12 @@ module.exports.runChicken = async (req, res) => {
             // isRunning -> true
             { isRunning: true },
             { new: true }
-            ).then((data) => { /*console.log(data);*/ ChickenModel.findByIdAndUpdate(
+            ).then((data) => { ChickenModel.findByIdAndUpdate(
                 req.params.id,
                 // incrementer steps de 1
                 { steps: data.steps + 1 },
                 { new: true }
-                ).then((data) => { console.log(data); ChickenModel.findByIdAndUpdate(
+                ).then((data) => { ChickenModel.findByIdAndUpdate(
                     req.params.id,
                     // isRunning -> false
                     { isRunning: false },
