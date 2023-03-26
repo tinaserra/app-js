@@ -37,6 +37,8 @@ You can download [Postman](https://www.postman.com/downloads/) to test your `GET
 
 ![example of creating request with postman](./links/postman-example.png)
 
+You can import [my test collection](./TESTS.postman_collection.json) `https://github.com/tinaserra/app-js/blob/main/TESTS.postman_collection.json` in postman.
+
 ## DataBase
 
 Create a cluster with [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) and add your URI database in a `.env` file.
