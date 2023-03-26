@@ -1,5 +1,5 @@
 const express = require('express');
-const { getChicken, setChicken, editChicken, deleteChicken, runChicken } = require('../controllers/chicke..controllers');
+const { getChicken, setChicken, editChicken, deleteChicken, runChicken } = require('../controllers/chicken.controllers');
 const router = express.Router();
 
 router.get("/", getChicken);
