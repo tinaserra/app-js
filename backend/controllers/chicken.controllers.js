@@ -28,7 +28,7 @@ module.exports.editChicken = async (req, res) => {
     const chicken = await ChickenModel.findById(req.params.id);
 
     if (!chicken) {
-        res.status(400).json({name: "This chicken dosn't exist"});
+        res.status(400).json({name: "This chicken doesn't exist"});
     }
 
     const updateChicken = await ChickenModel.findByIdAndUpdate(
@@ -44,7 +44,7 @@ module.exports.deleteChicken = async (req, res) => {
     const chicken = await ChickenModel.findById(req.params.id);
 
     if (!chicken) {
-        res.status(400).json({name: "This chicken dosn't exist"});
+        res.status(400).json({name: "This chicken doesn't exist"});
     }
 
     // remove deprecated ?
