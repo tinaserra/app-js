@@ -37,7 +37,7 @@ You can download [Postman](https://www.postman.com/downloads/) to test your `GET
 
 ![example of creating request with postman](./links/postman-example.png)
 
-You can import [my test collection](./TESTS.postman_collection.json) `https://github.com/tinaserra/app-js/blob/main/TESTS.postman_collection.json` in postman.
+You can import [my test collection](./TESTS.postman_collection.json) `TESTS.postman_collection.json` in postman.
 
 ## DataBase
 
